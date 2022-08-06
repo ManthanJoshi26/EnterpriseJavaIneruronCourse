@@ -65,6 +65,9 @@ public class GuessGame {
         boolean allFail = false;
 
         int winnerPlayer = 0;
+        
+        System.out.print("\n\nEnter Number of the player :: ");
+        
         int numOfPlayer = sc.nextInt();
         int round = 1;
         String[] s = new String[numOfPlayer];
@@ -72,7 +75,7 @@ public class GuessGame {
 
         while(numOfPlayer > 1){
             int countTemp = 0;
-            System.out.println("Round "+ Integer.toString(round) + " Starts : \n\n");
+            System.out.println(" \n\nRound "+ Integer.toString(round) + " Starts : \n\n");
 
 
             Umpire umpire = new Umpire();
